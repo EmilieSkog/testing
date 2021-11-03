@@ -348,4 +348,115 @@ html.is-clipped--navbar{overflow-y:hidden}body{padding-top:3.5rem}
 footer.footer{background-color:#e1e1e1;color:#5d5d5d;font-size:.83333rem;line-height:1.6;padding:1.5rem}
 .footer p{margin:.5rem 0}.footer a{color:#191919}
 
-/*! Adapted from the GitHub style by Vasily Polovnyov <vast@whiteants.net> */.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:500}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:500}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:500}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:500}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:500}@page{margin:.5in}@media print{.hide-for-print{display:none!important}html{font-size:.9375em}a{color:inherit!important;text-decoration:underline}a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none}img,object,svg,tr{page-break-inside:avoid}thead{display:table-header-group}pre{-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;white-space:pre-wrap}body{padding-top:2rem}.navbar{background:none;color:inherit;position:absolute}.navbar *{color:inherit!important}#topbar-nav,.nav-container,.toolbar{display:none}.doc{color:inherit;margin:auto;max-width:none;padding-bottom:2rem}.doc .listingblock code[data-lang]:before{display:block}footer.footer{background:none;border-top:1px solid #e1e1e1;color:#8e8e8e;padding:.5rem}.footer *{color:inherit}}.main{position:relative}.doc h1:before,.doc h2:before,.doc h3:before,.doc h4:before,.doc h5:before,.doc h6:before{display:block;content:" ";height:130px;margin-top:-130px;visibility:hidden;overflow:hidden}.article-aside{display:none;max-height:calc(100% - 14rem);overflow-y:auto}@media screen and (min-width:1025px){.article-aside{display:block;position:fixed;top:150px;right:0;font-size:13px;border-left:1px dotted #e1e1e1;padding-left:1rem;width:16rem}.article-aside.hidden{display:none}.doc{float:left;width:calc(100% - 22rem)}}.article-aside h3.toc-title{font-size:14px;color:#666;font-weight:700;display:block;padding:0;margin:0 0 5px}.article-aside ol{padding:0;margin:0}.article-aside ol ol li{padding-left:10px}.toc-list,.toc-list-item{list-style:none}.toc-link{display:block;color:#999;text-decoration:none;padding:5px 0 5px 5px;line-height:1.2;font-size:.95em;position:relative;width:100%;font-weight:400;text-overflow:ellipsis;overflow:auto;white-space:normal;cursor:pointer;-webkit-transition:.2s;transition:.2s}.toc-link.is-active-link{font-weight:600;color:#666}#article-toc:not(.is-position-fixed)>.toc-list>.toc-list-item>.toc-link.is-active-link:first-child{font-weight:400;color:#999}.is-collapsed{display:none}
+/*! Adapted from the GitHub style by Vasily Polovnyov <vast@whiteants.net> */
+.hljs-comment,
+.hljs-quote{color:#998;font-style:italic
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst{color:#333;font-weight:500
+}
+.hljs-literal,
+.hljs-number,
+.hljs-tag .hljs-attr,
+.hljs-template-variable,
+.hljs-variable{color:teal
+}
+.hljs-doctag,
+.hljs-string{color:#d14
+}
+.hljs-section,
+.hljs-selector-id,
+.hljs-title{color:#900;font-weight:500
+}
+.hljs-subst{font-weight:400
+}
+.hljs-class .hljs-title,
+.hljs-type{color:#458;font-weight:500
+}
+.hljs-attribute,
+.hljs-name,
+.hljs-tag{color:navy;font-weight:400
+}
+.hljs-link,
+.hljs-regexp{color:#009926
+}
+.hljs-bullet,
+.hljs-symbol{color:#990073
+}
+.hljs-built_in,
+.hljs-builtin-name{color:#0086b3
+}
+.hljs-meta{color:#999;font-weight:500}
+.hljs-deletion{background:#fdd}
+.hljs-addition{background:#dfd}
+.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:500}
+@page{margin:.5in}
+@media print{
+    .hide-for-print{display:none!important
+    }
+    html{font-size:.9375em
+    }
+    a{color:inherit!important;text-decoration:underline
+    }
+    a.bare,
+    a[href^="#"],
+    a[href^="mailto:"]{text-decoration:none
+    }
+    img,
+    object,
+    svg,
+    tr{page-break-inside:avoid
+    }
+    thead{display:table-header-group
+    }
+    pre{-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;white-space:pre-wrap
+    }
+    body{padding-top:2rem
+    }
+    .navbar{background:none;color:inherit;position:absolute
+    }
+    .navbar *{color:inherit!important
+    }
+    #topbar-nav,
+    .nav-container,
+    .toolbar{display:none
+    }
+    .doc{color:inherit;margin:auto;max-width:none;padding-bottom:2rem
+    }
+    .doc .listingblock code[data-lang]:before{display:block
+    }
+    footer.footer{background:none;border-top:1px solid #e1e1e1;color:#8e8e8e;padding:.5rem
+    }
+    .footer *{color:inherit
+    }
+}
+.main{position:relative}
+.doc h1:before,
+.doc h2:before,
+.doc h3:before,
+.doc h4:before,
+.doc h5:before,
+.doc h6:before{display:block;content:" ";height:130px;margin-top:-130px;visibility:hidden;overflow:hidden
+}
+.article-aside{display:none;max-height:calc(100% - 14rem);overflow-y:auto}
+@media screen and (min-width:1025px){
+    .article-aside{display:block;position:fixed;top:150px;right:0;font-size:13px;border-left:1px dotted #e1e1e1;padding-left:1rem;width:16rem
+    }
+    .article-aside.hidden{display:none
+    }
+    .doc{float:left;width:calc(100% - 22rem)
+    }
+}
+.article-aside h3.toc-title{font-size:14px;color:#666;font-weight:700;display:block;padding:0;margin:0 0 5px}
+.article-aside ol{padding:0;margin:0}
+.article-aside ol ol li{padding-left:10px}
+
+.toc-list,
+.toc-list-item{list-style:none
+}
+.toc-link{display:block;color:#999;text-decoration:none;padding:5px 0 5px 5px;line-height:1.2;font-size:.95em;position:relative;width:100%;font-weight:400;text-overflow:ellipsis;overflow:auto;white-space:normal;cursor:pointer;-webkit-transition:.2s;transition:.2s}
+.toc-link.is-active-link{font-weight:600;color:#666}
+#article-toc:not(.is-position-fixed)>.toc-list>.toc-list-item>.toc-link.is-active-link:first-child{font-weight:400;color:#999}
+.is-collapsed{display:none}
