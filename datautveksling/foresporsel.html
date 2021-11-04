@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.16">
-<title>Untitled</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<title>Forespørsel</title>
+<link rel="stylesheet" href="asciidoctor_plain.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment the following line when using as a custom stylesheet */
@@ -437,16 +438,66 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article">
-<div id="header">
-</div>
-<div id="content">
 
+
+<body class="article">
+    <div class="sidenav">
+    <a href="#about">Om</a>
+    <a href="#services">Navigasjon</a>
+    <button class="dropdown-btn">Datautveksling 
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Meldingsforsendelse</a>
+        <a href="datautveksling/foresporsel.html">
+            <button class="dropdown-btn">Forespørsel-svar
+                <i class="fa fa-caret-down"></i> 
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Noe info</a>
+                <button class="dropdown-btn">Mer om forespørsel 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#contact">BlaBlaBla</a>
+                </div>
+            </div>
+        </a>
+        <a href="#">Publisering-konsumering</a>
+    </div>
+    <a href="#contact">Kontakt</a>
 </div>
-<div id="footer">
-<div id="footer-text">
-Last updated 2021-11-04 16:09:46 +0100
-</div>
-</div>
+ 
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+</script>
+<main>
+    <div id="header">
+        Forespørsel-svar
+    </div>
+    <div id="content">
+        Her er litt info
+    </div>
+    
+    <div id="footer">
+        <div id="footer-text">
+            Last updated 2021-11-04 16:09:46 +0100
+        </div>
+    </div>
+</main>
 </body>
 </html>
