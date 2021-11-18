@@ -102,7 +102,7 @@ label{
 }
 
 .sidenav{
-  width: 100%;
+  width: 210px;
   background-color: rgba(248, 247, 243, 0.974);
   overflow-x: hidden;
   border-bottom: 1px solid #818181;
@@ -116,7 +116,7 @@ label{
   text-decoration: none;
   color: #818181;
   font-weight: normal;
-  width: 100%;
+  width: 210px;
 }
 
 .item ul{
@@ -132,7 +132,18 @@ label{
   text-decoration: none;
   color: #818181;
   font-weight: normal;
-  width: 100%;
+  width: 210px;
+}
+
+.item a{
+  line-height: 50px;
+  margin: 0;
+  padding: 0 2em; /*top and bottom & left and right*/
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 210px;
 }
 
 
