@@ -57,7 +57,7 @@ table {
 /*NAVBAR*/
 
 /* Function for dropdown*/
-.sidenav, .item ul {
+.sidenav, .item ul, .sidenav input[type="checkbox"] {
   display: none;
 }
 
@@ -214,5 +214,3 @@ Old navbar design
   padding-right: 8px;
 }*/
 
-
-*/
