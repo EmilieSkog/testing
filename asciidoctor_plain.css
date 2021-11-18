@@ -102,10 +102,11 @@ label{
 }
 
 .sidenav{
+  height: 100%;
   width: 210px;
   background-color: rgba(248, 247, 243, 0.974);
   overflow-x: hidden;
-  border-bottom: 1px solid #818181;
+  border-left: 1px solid #818181;
   position: fixed;
   z-index: 1;
 }
