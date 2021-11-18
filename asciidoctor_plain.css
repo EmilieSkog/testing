@@ -67,6 +67,7 @@ table {
 
 .item input:checked ~ label{
   background-color: rgb(30, 94, 105);
+  color: #CCCCCC;
 }
 
 .sub-item input:checked ~ label{
@@ -225,7 +226,7 @@ label{
   margin-left: 210px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-  width: 100%;
+  /*width: 100%;
 }
 
 /*
