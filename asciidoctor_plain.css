@@ -58,6 +58,9 @@ table {
 
 /* Function for dropdown*/
 
+.item ul, .sidenav input[type="checkbox"]{
+  display: none;
+}
 
 .item input:checked ~ ul{
   display: block;
@@ -100,7 +103,6 @@ label{
   background-color: rgba(248, 247, 243, 0.974);
   overflow-x: hidden;
   border-bottom: 1px solid #818181;
-  position: fixed;
 }
 
 .sidenav ul, .sidenav li, label {
@@ -130,12 +132,12 @@ label{
   width: 100%;
 }
 
-
+/*
 .item a{
   line-height: 50px;
   margin: 0;
   padding: 0 2em; /*top and bottom & left and right*/
-  list-style: none;
+  /*list-style: none;
   text-decoration: none;
   color: #818181;
   font-weight: normal;
