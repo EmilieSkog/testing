@@ -2447,101 +2447,136 @@ p.tableblock {
 
 
 <body class="article">
+  <!--
+  <div class="sidenav">
+      <a href="#about">Om</a>
+      <a href="#services">Navigasjon</a>
+      <button class="dropdown-btn">Datautveksling 
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+          <a href="#">Meldingsforsendelse</a>
+          <button class="dropdown-btn_second">Forespørsel-svar
+              <i class="fa fa-caret-down"></i> 
+          </button>
+          <div class="dropdown-container">
+              <a href="#">Noe info</a>
+              <button class="dropdown-btn_second">Mer om forespørsel 
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                  <a href="#contact">BlaBlaBla</a>
+              </div>
+          </div>
+          <a href="#">Publisering-konsumering</a>
+      </div>
+      <a href="#contact">Kontakt</a>
+  </div>
+  -->
 
-<div class="sidenav">
-    <a href="#about">Om</a>
-    <a href="#services">Navigasjon</a>
-    <button class="dropdown-btn">Datautveksling 
-        <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-        <a href="#">Meldingsforsendelse</a>
-        <button class="dropdown-btn_second">Forespørsel-svar
-            <i class="fa fa-caret-down"></i> 
-        </button>
-        <div class="dropdown-container">
-            <a href="#">Noe info</a>
-            <button class="dropdown-btn_second">Mer om forespørsel 
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#contact">BlaBlaBla</a>
-            </div>
-        </div>
-        <a href="#">Publisering-konsumering</a>
-    </div>
-    <a href="#contact">Kontakt</a>
-</div>
-
-
-<script>
-    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-    var dropdown_second = document.getElementsByClassName("dropdown-btn_second");
-    var j;
-
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
-        dropdownContent.style.display = "none";
-        } else {
-        dropdownContent.style.display = "block";
-        }
-      });
-    }
-    for (j = 0; j < dropdown_second.length; j++) {
-      dropdown_second[i].addEventListener("click", function() {
-        if (this.style.display === "none"){
-          this.style.display = "block";
-        }
-        this.classList.toggle("active_second");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
-        dropdownContent.style.display = "none";
-        } else {
-        dropdownContent.style.display = "block";
-        }
-      });
-    }
-</script>
-
-
-<div class="main"> 
-    <div id="header">
-        <h1>Tittel</h1>
-        <div class="details">
-            <span id="author" class="author">Intro til siden</span><br>
-        </div>
-    </div>
-    <div id="content">
-    <div class="sect1">
-        <h2 id="_struktur">Struktur</h2>
-        <div class="sectionbody">
-            <div class="paragraph">
-                <p>Hvordan siden er bygget opp</p>
-            </div>
-        </div>
-    </div>
-    <div class="sect1">
-        <h2 id="_innholdsforvaltning">Innholdsforvaltning</h2>
-        <div class="sectionbody">
-            <div class="paragraph">
-                <p>Hvem er ansvarlig for innholdet</p>
-            </div>
-        </div>
-    </div>
+  <div class="sidenav">
+    <div class="item">
+      <input type="checkbox" id="A"/>
+      <label for="A">About</label>
+      <a href="#about">About</a>
     </div>
 
+    <div class="item">
+      <input type="checkbox" id="B"/>
+      <label for="B">Navigation</label>
+      <a href="#navigation">Navigation</a>
+    </div>
+
+    <div class="item">
+      <input type="checkbox" id="C"/>
+      <label for="C">Data exchange</label>
+
+      <ul>
+        <li>
+          <div class ="sub-item">
+            <input type="checkbox" id="C_A"/>
+            <label for="C_A">Request</label>
+
+            <ul>
+              <li><a href="#">Some info</a></li>
+              <div>
+                <input type="checkbox" id="C_A_B">
+                <label for="C_A_B">More info</label>
+
+                <ul>
+                  <li><a href="#">Last info</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </div>
     
-    <div id="footer">
-        <div id="footer-text">
-            Sist oppdatert 2021-11-18
-        </div>
+    <div class="item">
+      <input type="checkbox" id="D"/>
+      <label for="D">Contact</label>
+      <a href="#contact">Contact</a>
     </div>
-</div>
+
+
+  </div>
+
+  <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      var dropdown_second = document.getElementsByClassName("dropdown-btn_second");
+      var j;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+        });
+      }
+  </script>
+
+
+  <div class="main"> 
+      <div id="header">
+          <h1>Tittel</h1>
+          <div class="details">
+              <span id="author" class="author">Intro til siden</span><br>
+          </div>
+      </div>
+      <div id="content">
+      <div class="sect1">
+          <h2 id="_struktur">Struktur</h2>
+          <div class="sectionbody">
+              <div class="paragraph">
+                  <p>Hvordan siden er bygget opp</p>
+              </div>
+          </div>
+      </div>
+      <div class="sect1">
+          <h2 id="_innholdsforvaltning">Innholdsforvaltning</h2>
+          <div class="sectionbody">
+              <div class="paragraph">
+                  <p>Hvem er ansvarlig for innholdet</p>
+              </div>
+          </div>
+      </div>
+      </div>
+
+      
+      <div id="footer">
+          <div id="footer-text">
+              Sist oppdatert 2021-11-18
+          </div>
+      </div>
+  </div>
 
 
 </body>

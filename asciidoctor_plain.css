@@ -52,9 +52,90 @@ table {
   font-size: 3vw;}
 }
 
+/*Personalized*/
+
 /*NAVBAR*/
+
+/* Function for dropdown*/
+.sidenav, .item ul {
+  display: none;
+}
+
+.item input:checked ~ ul{
+  display: block;
+}
+
+/*Arrow*/
+.arrow{
+  width: 12 px;
+  height: 12 px;
+  vertical-align: middle;
+  float: left;
+  z-index: 0;
+  margin: 17 px 1em 0 2 em;
+}
+
+.item input + arrow .arrow{
+  transform: rotate (90deg);
+  transition: 0.1s;
+}
+
+.item input:checked + .arrow{
+  transform: rotate(0deg);
+  transition: 0.1s;
+}
+
+/*Styling*/
+label:hover{
+  cursor: pointer;
+}
+
+label{
+  width: 100%;
+  display: block;
+  z-index: 3; /*clicl anywere on the label and it will act like a link*/
+  position: relative;
+}
+
+.sidenav{
+  width: 100%;
+  background-color: rgba(248, 247, 243, 0.974);
+  overflow-x: hidden;
+  border-bottom: 1px solid #818181;
+}
+
+.sidenav ul, .sidenav li, label {
+  line-height: 50px;
+  margin: 0;
+  padding: 0 2em; /*top and bottom & left and right*/
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+.item ul{
+  padding: 0 0.25em;
+
+}
+
+.sidenav li a{
+  line-height: 50px;
+  margin: 0;
+  padding: 0 4em; /*top and bottom & left and right*/
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+
+/*
+Old navbar design
 /* Fixed sidenav, full height */
-.sidenav {
+/*.sidenav {
   height: 100%;
   width: 210px;
   position: fixed;
@@ -67,7 +148,7 @@ table {
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn{
+/*.sidenav a, .dropdown-btn{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
@@ -81,7 +162,7 @@ table {
   outline: none;
 }
 
-.dropdown-btn_second {
+/*.dropdown-btn_second {
   padding:6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
@@ -97,38 +178,41 @@ table {
 }
 
 /* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover, .dropdown-btn_second:hover {
+/*.sidenav a:hover, .dropdown-btn:hover, .dropdown-btn_second:hover {
   color: #575757;
 }
 
 /* Main content */
-.main {
+/*.main {
   margin-left: 210px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+ /* font-size: 20px; /* Increased text to enable scrolling */
+  /*padding: 0px 10px;
 }
 
 /* Add an active class to the active dropdown button */
-.active{
+/*.active{
   background-color: rgb(30, 94, 105);
   color: white;
 }
 
 /* Add an active class to the active dropdown button beyond first level */
-.active_second{
+/*.active_second{
   color: #575757;
   font-weight: bold;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
+/*.dropdown-container {
   display: none;
   background-color: rgba(232, 231, 226, 0.974);
   padding-left: 8px;
 }
 
 /* Optional: Style the caret down icon */
-.fa-caret-down {
+/*.fa-caret-down {
   float: left;
   padding-right: 8px;
-}
+}*/
+
+
+*/
