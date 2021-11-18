@@ -57,7 +57,7 @@ table {
 /*NAVBAR*/
 
 /* Function for dropdown*/
- .item ul{
+ .sidenav, .item ul{
   display: none;
 }
 
