@@ -57,17 +57,13 @@ table {
 /*NAVBAR*/
 
 /* Function for dropdown*/
- .sidenav, .item ul{
+.sidenav, .item ul {
   display: none;
 }
 
 .item input:checked ~ ul{
   display: block;
 }
-
-/*.item input:checked ~ label{
-  background-color: rgb(30, 94, 105);
-}*/
 
 /*Arrow*/
 .arrow{
@@ -102,7 +98,7 @@ label{
 }
 
 .sidenav{
-  width: 210px;
+  width: 100%;
   background-color: rgba(248, 247, 243, 0.974);
   overflow-x: hidden;
   border-bottom: 1px solid #818181;
@@ -116,7 +112,7 @@ label{
   text-decoration: none;
   color: #818181;
   font-weight: normal;
-  width: 210px;
+  width: 100%;
 }
 
 .item ul{
@@ -132,8 +128,9 @@ label{
   text-decoration: none;
   color: #818181;
   font-weight: normal;
-  width: 210px;
+  width: 100%;
 }
+
 
 .item a{
   line-height: 50px;
