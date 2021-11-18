@@ -2456,12 +2456,12 @@ p.tableblock {
     </button>
     <div class="dropdown-container">
         <a href="#">Meldingsforsendelse</a>
-        <button class="dropdown-btn">Forespørsel-svar
+        <button class="dropdown-btn_second">Forespørsel-svar
             <i class="fa fa-caret-down"></i> 
         </button>
         <div class="dropdown-container">
             <a href="#">Noe info</a>
-            <button class="dropdown-btn">Mer om forespørsel 
+            <button class="dropdown-btn_second">Mer om forespørsel 
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
@@ -2485,11 +2485,22 @@ p.tableblock {
       dropdown[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var dropdownContent = this.nextElementSibling;
-      /*if (dropdownContent.style.display === "block") {
+      if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
       dropdownContent.style.display = "none";
       } else {
       dropdownContent.style.display = "block";
-      }*/
+      }
+      });
+    }
+    for (j = 0; j < dropdown_second.length; j++) {
+      dropdown_second[i].addEventListener("click", function() {
+      this.classList.toggle("active_second");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
       });
     }
 </script>

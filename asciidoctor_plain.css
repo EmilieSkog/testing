@@ -67,7 +67,7 @@ table {
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn, .dropdown-btn_second {
+.sidenav a, .dropdown-btn{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
@@ -81,8 +81,23 @@ table {
   outline: none;
 }
 
+.dropdown-btn_second {
+  padding:6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  padding-left: 8px;
+}
+
 /* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
+.sidenav a:hover, .dropdown-btn:hover, .dropdown-btn_second:hover {
   color: #575757;
 }
 
@@ -101,7 +116,7 @@ table {
 
 /* Add an active class to the active dropdown button beyond first level */
 .active_second{
-  color: white;
+  color: #575757;
   font-weight: bold;
 }
 
@@ -115,5 +130,5 @@ table {
 /* Optional: Style the caret down icon */
 .fa-caret-down {
   float: left;
-  padding-right: 8px;
+  /*padding-right: 8px;*/
 }
