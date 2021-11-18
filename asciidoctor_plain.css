@@ -56,10 +56,10 @@ table {
 
 /*NAVBAR*/
 
-/* Function for dropdown*/
+/* Function for dropdown
  .sidenav, .item ul{
   display: none;
-}
+}*/
 
 .item input:checked ~ ul{
   display: block;
