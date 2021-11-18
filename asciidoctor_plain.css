@@ -99,7 +99,7 @@ label{
 }
 
 .sidenav{
-  width: 210px;
+  width: 100%;
   background-color: rgba(248, 247, 243, 0.974);
   overflow-x: hidden;
   border-bottom: 1px solid #818181;
