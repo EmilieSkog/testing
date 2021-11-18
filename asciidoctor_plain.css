@@ -61,7 +61,7 @@ table {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(243, 237, 228, 0.953);
+  background-color: rgba(248, 247, 243, 0.974);
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -83,7 +83,7 @@ table {
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  color: #575757;
 }
 
 /* Main content */
@@ -108,7 +108,7 @@ table {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: rgba(232, 231, 226, 0.974);
   padding-left: 8px;
 }
 
