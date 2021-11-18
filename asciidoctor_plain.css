@@ -67,7 +67,7 @@ table {
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+.sidenav a, .dropdown-btn, .dropdown-btn_second {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
@@ -94,9 +94,15 @@ table {
 }
 
 /* Add an active class to the active dropdown button */
-.active {
+.active{
   background-color: rgb(30, 94, 105);
   color: white;
+}
+
+/* Add an active class to the active dropdown button beyond first level */
+.active_second{
+  color: white;
+  font-weight: bold;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
