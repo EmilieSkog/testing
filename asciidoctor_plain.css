@@ -111,10 +111,10 @@ label{
   z-index: 1;
 }
 
-.sidenav ul, .sidenav li, label {
+.item ul, .item li, .item label {
   line-height: 50px;
   margin: 0;
-  padding: 0 0 8px 0; /*top and bottom & left and right*/
+  padding: 0 0 4px 0; /*top and bottom & left and right*/
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -123,14 +123,14 @@ label{
 }
 
 .item ul{
-  padding: 0 0 10px 0;
+  padding: 0 0 6px 0;
 
 }
 
 .sidenav li a{
   line-height: 50px;
   margin: 0;
-  padding: 0 0 12px 0; /*top and bottom & left and right*/
+  padding: 0 0 8px 0; /*top and bottom & left and right*/
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -142,7 +142,7 @@ label{
 .item a{
   line-height: 50px;
   margin: 0;
-  padding: 0 0 8px 0;
+  padding: 0 0 4px 0;
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -151,6 +151,9 @@ label{
   text-decoration: none;
 }
 .item a:link{color:var(#575757);font-weight:var(bold);}
+.item a:hover, .item label:hover{
+  color: #575757;
+}
 
 /* Main content */
 .main {
