@@ -2483,7 +2483,7 @@ p.tableblock {
 
     for (i = 0; i < dropdown.length; i++) {
       dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("active");
+      this.classList.toggle("active_second");
       var dropdownContent = this.nextElementSibling;
       if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
@@ -2491,17 +2491,6 @@ p.tableblock {
       dropdownContent.style.display = "block";
       }
       });
-      for (j = 0; j < dropdown_second.length; j++) {
-        dropdown_second[j].addEventListener("click", function() {
-        this.classList.toggle("active_second");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-        } else {
-        dropdownContent.style.display = "block";
-        }
-        });
-      }
     }
 </script>
 
