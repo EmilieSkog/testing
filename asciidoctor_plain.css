@@ -130,7 +130,7 @@ label{
 .sidenav li a{
   line-height: 50px;
   margin: 0;
-  padding: 0 12px; /*top and bottom & left and right*/
+  padding: 0 0 12px 0; /*top and bottom & left and right*/
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -142,7 +142,7 @@ label{
 .item a{
   line-height: 50px;
   margin: 0;
-  padding: 0 2em; /*top and bottom & left and right*/
+  padding: 0 0 8px 0;
   list-style: none;
   text-decoration: none;
   color: #818181;
