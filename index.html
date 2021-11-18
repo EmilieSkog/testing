@@ -2483,24 +2483,27 @@ p.tableblock {
 
     for (i = 0; i < dropdown.length; i++) {
       dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
-      dropdownContent.style.display = "none";
-      } else {
-      dropdownContent.style.display = "block";
-      }
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
       });
     }
     for (j = 0; j < dropdown_second.length; j++) {
       dropdown_second[i].addEventListener("click", function() {
-      this.classList.toggle("active_second");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
-      dropdownContent.style.display = "none";
-      } else {
-      dropdownContent.style.display = "block";
-      }
+        if (this.style.display === "none"){
+          this.style.display = "block";
+        }
+        this.classList.toggle("active_second");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
       });
     }
 </script>
