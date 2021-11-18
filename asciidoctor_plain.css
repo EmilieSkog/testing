@@ -118,7 +118,7 @@ label{
 .item ul{
   line-height: 50px;
   margin: 0;
-  padding-left: 16px;
+  padding-left: 4px;
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -140,6 +140,17 @@ label{
 .item label{
   line-height: 50px;
   margin: 0;
+  padding-left: 4px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+.sub-item label{
+  line-height: 50px;
+  margin: 0;
   padding-left: 8px;
   list-style: none;
   text-decoration: none;
@@ -148,10 +159,21 @@ label{
   width: 100%;
 }
 
-.sidenav li a{
+.sub-sub-item label{
   line-height: 50px;
   margin: 0;
-  padding-left: 24px; 
+  padding-left: 12px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+.item li a{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 12px; 
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -163,7 +185,7 @@ label{
 .item a{
   line-height: 50px;
   margin: 0;
-  padding-left: 8px;
+  padding-left: 4px;
   list-style: none;
   text-decoration: none;
   color: #818181;
