@@ -102,7 +102,7 @@ label{
 }
 
 .sidenav{
-  width: 100%;
+  width: 210px;
   background-color: rgba(248, 247, 243, 0.974);
   overflow-x: hidden;
   border-bottom: 1px solid #818181;
@@ -150,6 +150,13 @@ label{
   text-decoration: none;
 }
 .item a:link{color:var(#575757);font-weight:var(bold);}
+
+/* Main content */
+.main {
+  margin-left: 210px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
 
 /*
 Old navbar design
