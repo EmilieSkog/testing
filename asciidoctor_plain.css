@@ -70,6 +70,7 @@ table {
 }
 
 .sub-item input:checked ~ label{
+  background-color: rgba(248, 247, 243, 0.974);
   font-weight: bold;
 }
 
@@ -158,11 +159,32 @@ label{
   font-weight: normal;
   width: 100%;
 }
+.sub-item li{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 8px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
 
 .sub-sub-item label{
   line-height: 50px;
   margin: 0;
   padding-left: 12px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+.sub-sub-item li{  
+  line-height: 50px;
+  margin: 0;
+  padding-left: 8px;
   list-style: none;
   text-decoration: none;
   color: #818181;
