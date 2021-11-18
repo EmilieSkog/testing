@@ -56,16 +56,16 @@ table {
 
 /*NAVBAR*/
 
-/* Function for dropdown
- .sidenav, .item ul{
+/* Function for dropdown*/
+ .sidenav input[type="checkbox"], .item ul{
   display: none;
-}*/
+}
 
 .item input:checked ~ ul{
   display: block;
 }
 
-.item input:checked{
+.item input:checked ~ label{
   background-color: rgb(30, 94, 105);
 }
 
