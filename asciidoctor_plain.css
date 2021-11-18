@@ -57,7 +57,7 @@ table {
 /*NAVBAR*/
 
 /* Function for dropdown*/
-.sidenav input[type="checkbox"], .item ul {
+.item ul {
   display: none;
 }
 
