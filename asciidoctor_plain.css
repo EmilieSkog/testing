@@ -65,7 +65,9 @@ table {
   display: block;
 }
 
-
+.item input:checked ~ label{
+  background-color: rgb(30, 94, 105);
+}
 
 /*Arrow*/
 .arrow{
