@@ -69,6 +69,10 @@ table {
   background-color: rgb(30, 94, 105);
 }
 
+.sub-item input:checked ~ label{
+  font-weight: bold;
+}
+
 /*Arrow*/
 .arrow{
   width: 12 px;
