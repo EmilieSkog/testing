@@ -56,12 +56,12 @@ table {
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 210px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgba(243, 237, 228, 0.953);
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -70,7 +70,7 @@ table {
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   color: #818181;
   display: block;
   border: none;
@@ -88,7 +88,7 @@ table {
 
 /* Main content */
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 210px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
