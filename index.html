@@ -2456,12 +2456,12 @@ p.tableblock {
     </button>
     <div class="dropdown-container">
         <a href="#">Meldingsforsendelse</a>
-        <button class="dropdown-btn_second">Forespørsel-svar
+        <button class="dropdown-btn">Forespørsel-svar
             <i class="fa fa-caret-down"></i> 
         </button>
         <div class="dropdown-container">
             <a href="#">Noe info</a>
-            <button class="dropdown-btn_second">Mer om forespørsel 
+            <button class="dropdown-btn">Mer om forespørsel 
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
@@ -2487,8 +2487,10 @@ p.tableblock {
       var dropdownContent = this.nextElementSibling;
       if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
+      dropdownContent.classList.toggle("active_second");
       } else {
       dropdownContent.style.display = "block";
+      dropdownContent.classList.toggle("active_second");
       }
       });
     }
