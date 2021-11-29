@@ -86,14 +86,14 @@ table {
   margin: 17 px 1em 0 2 em;
 }
 
-.item input + .arrow{
+/*.item input + .arrow{
   transform: rotate (-90deg);
   transition: 0.1s;
-}
+}*/
 
 .item input:checked + .arrow{
   transform: rotate(90deg);
-  transition: 0.1s;
+  transition: 0.05s;
   color:#818181;
 }
 
