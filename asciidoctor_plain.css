@@ -78,8 +78,8 @@ table {
 
 /*Arrow*/
 .arrow{
-  width: 12 px;
-  height: 12 px;
+  width: 2 px;
+  height: 2 px;
   vertical-align: middle;
   float: left;
   z-index: 0;
@@ -87,13 +87,14 @@ table {
 }
 
 .item input + .arrow{
-  transform: rotate (0deg);
+  transform: rotate (-90deg);
   transition: 0.1s;
 }
 
 .item input:checked + .arrow{
   transform: rotate(90deg);
   transition: 0.1s;
+  color:#818181;
 }
 
 /*Styling*/
