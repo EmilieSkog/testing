@@ -73,6 +73,7 @@ table {
 .sub-item input:checked ~ label{
   background-color: rgba(248, 247, 243, 0.974);
   font-weight: bold;
+  color: #818181;
 }
 
 /*Arrow*/
@@ -85,13 +86,13 @@ table {
   margin: 17 px 1em 0 2 em;
 }
 
-.item input + arrow .arrow{
-  transform: rotate (90deg);
+.item input + .arrow{
+  transform: rotate (0deg);
   transition: 0.1s;
 }
 
 .item input:checked + .arrow{
-  transform: rotate(0deg);
+  transform: rotate(90deg);
   transition: 0.1s;
 }
 
