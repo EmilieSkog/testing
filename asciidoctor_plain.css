@@ -78,12 +78,12 @@ table {
 
 /*Arrow*/
 .arrow{
-  width: 2px;
-  height: 2px;
+  width: 8px;
+  height: 8px;
   vertical-align: middle;
   float: left;
   z-index: 0;
-  margin: 17px 1em 0 2em;
+  margin: 17px 1em 0 0;
 }
 
 /*.item input + .arrow{
