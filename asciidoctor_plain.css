@@ -65,17 +65,17 @@ table {
   display: block;
 }
 
-/*.item input:checked ~ label{
+.item input:checked ~ label{
   background-color: rgb(30, 94, 105);
   color: #CCCCCC;
 }
 
-.sub-item input:checked ~ label{
+.sub-item input:checked ~ label, .sub-item input:checked ~ img{
   background-color: rgba(248, 247, 243, 0.974);
   font-weight: bold;
   color: #818181;
 }
-*/
+
 
 /*Arrow*/
 .arrow{
@@ -84,7 +84,7 @@ table {
   vertical-align: middle;
   float: left;
   z-index: 0;
-  margin: 17px 1em 4px 1px;
+  margin: 21px 2px 12px 4px;
 }
 
 /*.item input + .arrow{
@@ -92,10 +92,9 @@ table {
   transition: 0.1s;
 }*/
 
-.item input:checked + .arrow{
+.item input:checked ~ label img {
   transform: rotate(90deg);
   transition: 0.025s;
-  display: block;
 }
 
 /*Styling*/
@@ -113,9 +112,9 @@ label{
 .sidenav{
   height: 100%;
   width: 210px;
-  background-color: rgba(248, 247, 243, 0.974);
+  background-color: #FFFFFF;/*rgba(248, 247, 243, 0.974);*/
   overflow-x: hidden;
-  border-left: 1px solid #818181;
+  border-right: 1px solid #818181;
   position: fixed;
   z-index: 1;
 }
@@ -131,10 +130,10 @@ label{
   width: 100%;
 }
 
-.item li{
+.item li{ /*controls the second level*/
   line-height: 50px;
   margin: 0;
-  padding-left: 8px;
+  padding-left: 16px;
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -153,65 +152,10 @@ label{
   width: 100%;
 }
 
-.sub-item label{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 8px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
-.sub-item li{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 8px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
-
-.sub-sub-item label{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 12px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
-
-.sub-sub-item li{  
-  line-height: 50px;
-  margin: 0;
-  padding-left: 8px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
-
-.item li a{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 12px; 
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
-
-
 .item a{
   line-height: 50px;
   margin: 0;
-  padding-left: 12px;
+  padding-left: 14px;
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -224,6 +168,68 @@ label{
   color: #575757;
 }
 
+
+/*.sub-item label{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}*/
+
+.item li a{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 14px; 
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+
+.sub-item li{ /*controls 3rd level drop down*/
+  line-height: 50px;
+  margin: 0;
+  padding-left: 18px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+/*.sub-sub-item label{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}*/
+
+.sub-sub-item li{  
+  line-height: 50px;
+  margin: 0;
+  padding-left: 14px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+
+
+
+
+
 /* Main content */
 .main {
   margin-left: 210px; /* Same as the width of the sidenav */
@@ -232,84 +238,3 @@ label{
   /*width: 100%;*/
 }
 
-/*
-Old navbar design
-/* Fixed sidenav, full height */
-/*.sidenav {
-  height: 100%;
-  width: 210px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(248, 247, 243, 0.974);
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-/* Style the sidenav links and the dropdown button */
-/*.sidenav a, .dropdown-btn{
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/*.dropdown-btn_second {
-  padding:6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  padding-left: 8px;
-}
-
-/* On mouse-over */
-/*.sidenav a:hover, .dropdown-btn:hover, .dropdown-btn_second:hover {
-  color: #575757;
-}
-
-/* Main content */
-/*.main {
-  margin-left: 210px; /* Same as the width of the sidenav */
- /* font-size: 20px; /* Increased text to enable scrolling */
-  /*padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-/*.active{
-  background-color: rgb(30, 94, 105);
-  color: white;
-}
-
-/* Add an active class to the active dropdown button beyond first level */
-/*.active_second{
-  color: #575757;
-  font-weight: bold;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-/*.dropdown-container {
-  display: none;
-  background-color: rgba(232, 231, 226, 0.974);
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-/*.fa-caret-down {
-  float: left;
-  padding-right: 8px;
-}*/
