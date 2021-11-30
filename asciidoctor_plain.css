@@ -67,7 +67,7 @@ table {
 
 .item input:checked ~ label{
   background-color: rgb(30, 94, 105);
-  /*color: #CCCCCC;*/
+  color: #CCCCCC;
 }
 
 .sub-item input:checked ~ label{
@@ -83,7 +83,7 @@ table {
   vertical-align: middle;
   float: left;
   z-index: 0;
-  margin: 17px 1em 0 2px;
+  margin: 17px 1em 4px 1px;
 }
 
 /*.item input + .arrow{
@@ -94,7 +94,7 @@ table {
 .item input:checked + .arrow{
   transform: rotate(90deg);
   transition: 0.025s;
-  /*color:#818181;*/
+  display: block;
 }
 
 /*Styling*/
@@ -144,7 +144,7 @@ label{
 .item label{
   line-height: 50px;
   margin: 0;
-  padding-left: 4px;
+  padding-left: 0px;
   list-style: none;
   text-decoration: none;
   color: #818181;
@@ -210,7 +210,7 @@ label{
 .item a{
   line-height: 50px;
   margin: 0;
-  padding-left: 4px;
+  padding-left: 12px;
   list-style: none;
   text-decoration: none;
   color: #818181;
