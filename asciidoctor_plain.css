@@ -65,7 +65,7 @@ table {
   display: block;
 }
 
-.item input:checked ~ label{
+/*.item input:checked ~ label{
   background-color: rgb(30, 94, 105);
   color: #CCCCCC;
 }
@@ -75,6 +75,7 @@ table {
   font-weight: bold;
   color: #818181;
 }
+*/
 
 /*Arrow*/
 .arrow{
