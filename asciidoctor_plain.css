@@ -65,12 +65,12 @@ table {
   display: block;
 }
 
-.item input:checked ~ label, img{
+.item input:checked ~ label{
   background-color: rgb(30, 94, 105);
   color: #CCCCCC;
 }
 
-.sub-item input:checked ~ label, img{
+.sub-item input:checked ~ label{
   background-color: rgba(248, 247, 243, 0.974);
   font-weight: bold;
   color: #818181;
@@ -83,7 +83,7 @@ table {
   vertical-align: middle;
   float: left;
   z-index: 0;
-  margin: 17px 1em 0 0;
+  margin: 17px 1em 0 2px;
 }
 
 /*.item input + .arrow{
@@ -93,8 +93,8 @@ table {
 
 .item input:checked + .arrow{
   transform: rotate(90deg);
-  transition: 0.05s;
-  color:#818181;
+  transition: 0.025s;
+  /*color:#818181;*/
 }
 
 /*Styling*/
