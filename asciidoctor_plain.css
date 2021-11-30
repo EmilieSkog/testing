@@ -67,7 +67,7 @@ table {
 
 .item input:checked ~ label{
   background-color: rgb(30, 94, 105);
-  color: #CCCCCC;
+  /*color: #CCCCCC;*/
 }
 
 .sub-item input:checked ~ label{
