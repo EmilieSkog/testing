@@ -1,0 +1,422 @@
+= Architecture principles
+:toc: right
+:toclevels: 1
+:toc-title: Content
+:sectnums:
+
+== General principles
+
+=== Connected to overall DIGIN vision
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+|The DIGIN architecture shall help implement the overall vision of DIGIN: 
+
+“DIGIN-programmet skal legge til rette for å løse kraftbransjens evne til å håndtere og sikre elektrifiseringen, energiomstillingen og muliggjøre det grønne skiftet gjennom et fleksibelt og opplyst nett. Digitalisering og CIM er definert som viktige premissgivere.” 
+// 
+|*Rationale*
+|See DIGIN Vision document 
+//
+|*Implications*
+|The DIGIN architecture shall support a common digital language that facilitates digital interoperability and interaction between actors in the energy ecosystems in Norway. It should define standards and protocols for data exchange and facilitate access to, use and governance of these standards and protocols, according to common architecture blueprints. 
+//
+|*References*
+|DIGIN Vision document 
+//
+|===
+--
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Architecture principles from the Norwegian Digialisation Agency
+--
+[cols="1,3a", width=100%]
+|===
+|*Statement*
+| The general architecture principles from the Norwegian Digitalisation Agency shall apply: 
+
+. Ta utgangspunkt i brukernes behov 
+. Ta arkitekturbeslutninger på rett nivå 
+. Bidra til digitaliseringsvennlige regelverk 
+. Del og gjenbruk data 
+. Del og gjenbruk løsninger 
+. Lag digitale løsninger som støtter samhandling 
+. Sørg for tillit til oppgaveløsningen 
+// 
+|*Rationale*
+|These principles are created for the Norwegian government and public sector, but apply equally well to the energy sector 
+//
+|*Implications*
+|User (stakeholder) needs, and support must be at the centre of the architecture and access to the documents, data and solutions must be freely shared among stakeholders 
+
+DIGIN should align with other digitalization processes and initiatives in the public sector, especially around “digitaliseringvennlige regelverk.” 
+//
+|*References*
+|Full text of principles with guidance: https://www.digdir.no/samhandling/overordnede-arkitekturprinsipper/1065  
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Support for the energy ecosystem
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| The DIGIN architecture shall support exchange of data between multiple parties in the energy ecosystem 
+// 
+|*Rationale*
+| The DIGIN architecture should be relevant for all or most parties in the Norwegian energy industry ecosystem 
+//
+|*Implications*
+|The architecture must support data exchange between multiple stakeholders, e.g., DSO-DSO, DSO-TSO, DSO-supplier, DSO-contractor, relevant government or regulatory entities 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Openness of information
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| All information and documents related to architecture principles, vision, information models shall be openly available to all interested parties 
+// 
+|*Rationale*
+|
+//
+|*Implications*
+| Documents and source codes published by DIGIN should be provided under permissive licences, such as an appropriate version of the Creative Commons licences or open source licences, but a risk assessment should be done before material is published, taking into account information security and regulations around critical infrastructure. Governance around access of information must be established. 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Qualities and service levels
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| The DIGIN architecture shall have well defined parameters for product qualities such as security, data quality, availability and performance  
+// 
+|*Rationale*
+|
+//
+|*Implications*
+|A set of requirements for availability, performance, data quality and data volumes along with acceptable parameters should be defined and published. 
+
+DSO should have responsibility for their own SLA levels and publish these. DIGIN should publish templates for quality requirements 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Security and privacy
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+|The DIGIN architecture shall comply with recognized standards for information security and protection of personal data 
+// 
+|*Rationale*
+|The energy sector represents critical national infrastructure. It is necessary to ensure compliance with legal and regulatory requirements within information security and personal data protection. Threats related to data loss, service interruption, malicious actors, etc. must be considered 
+//
+|*Implications*
+|The DIGIN architecture must encourage and enforce information and security standards and best practices related to data storage and exchange. Threat assessments and risk reviews should be conducted initially and then regularly. Access control strategies must be clearly defined. 
+//
+|*References*
+|Kraftsberedskapsforskriften, Sikkerhetsloven (OED), GDPR (Schrems II) 
+//
+|===
+--
+
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+== Data storage and exchange principles 
+
+
+=== Independence of DSOs
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| All DSOs are responsible for their own IT systems 
+// 
+|*Rationale*
+|
+//
+|*Implications*
+|DIGIN does not standardize which IT systems DSOs use and implement. DSOs must implement their own compatibility layers with DIGIN standards. 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Distributed data storage
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| Data storage is the responsibility of each participant 
+// 
+|*Rationale*
+|
+//
+|*Implications*
+|Data shall in general not be shared to a central hub. Central data storage can be considered in special cases where there is agreement among participants. Metadata and service catalogues are examples of data that should be stored centrally. 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Responsibility for security
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| Information security is the responsibility of each participant 
+// 
+|*Rationale*
+|
+//
+|*Implications*
+|DSOs must have a sound governance and implementation of information security and personal data protection, in compliance with regulations and DIGIN guidelines 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Standards-based data exchange
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| All data to be exchanged shall be structured according to standardized information models and exchange protocols 
+// 
+|*Rationale*
+|A standards-based approach means that individual stakeholders will not have to spend resources on designing data exchange formats. Also, reference implementations can be created and shared 
+//
+|*Implications*
+|The information models and protocols must be available to all parties and described in a way that can be consumed by all parties. 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Independence of physical data models
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| The implementations of data models in DSOs IT systems are independent of the logical information models defined in DIGIN 
+// 
+|*Rationale*
+|The requirements for efficient storage and management of information vary between systems, and they must be free to store data in the most effective manner 
+//
+|*Implications*
+|Existing IT systems need not be changed, but a mapping must exist between physical implementations and standardized information models. Participants with similar IT systems should collaborate on implementing such mappings, involving suppliers when necessary.  
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Platform-independence
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| The DIGIN architecture shall be independent of any specific platform or vendor 
+// 
+|*Rationale*
+|A successful architecture must consider current investments by DSOs and other stakeholders and be open to diversity in implementation 
+//
+|*Implications*
+|A platform-agnostic architecture should support cloud-based, on-premise and hybrid solutions implemented by the DSOs 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Support for multiple data exchange protocols formats
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| The DIGIN architecture shall support data exchange in multiple protocols and formats 
+// 
+|*Rationale*
+|A successful architecture must consider current investments by DSOs and other stakeholders and be open to diversity in implementation 
+//
+|*Implications*
+|DIGIN must standardize multiple data exchange formats and protocols, but not necessarily support any format. Selected formats should be based on recognized standards and best practices and must be well-documented. 
+
+DIGIN should standardize information models and protocols for specific use cases.  
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Support for multiple patterns of data exchange
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| The DIGIN architecture shall support the most common patterns of data exchange: Push, pull and publish/subscribe. Transaction correlation? 
+// 
+|*Rationale*
+|A successful architecture must consider current investments by DSOs and other stakeholders and be open to diversity in implementation 
+//
+|*Implications*
+|Requirements should be considered per use case. The DIGIN architecture should support these in general. 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Standardized authentication and authorization
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| The DIGIN architecture shall define standards for authentication and authorization 
+// 
+|*Rationale*
+|In order to create an ecosystem where different parties can efficiently interact and exchange information securely, a common approach to authentication and authorization is needed 
+//
+|*Implications*
+|Common protocols for authentication and identity management must be defined by DIGIN 
+//
+|*References*
+|
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Standardized vocabulary and data definitions
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| The DIGIN architecture shall identify the available information vocabulary and shall define relevant information elements for all the stakeholders 
+// 
+|*Rationale*
+|To ensure the similar understanding of concepts and will facilitate communications and enable discussion to be effective. In addition, it is required to interface systems and exchange data. 
+//
+|*Implications*
+|DIGIN architecture repository shall maintain the standardize vocabulary and information definitions 
+//
+|*References*
+|
+//
+|===
+--
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+== Architecture governance
+Principles related to the establishment and governance of architecture  
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Central architecture repository
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+|DIGIN shall establish a central architecture repository  
+// 
+|*Rationale*
+|To ensure the success of the DIGIN architecture, it is necessary to facilitate sharing of information, guidelines, and architecture among stakeholders 
+//
+|*Implications*
+|A central repository shall be established with all information and artefacts pertaining to the DIGIN architecture, such as documents, information models, schemas, approved formats, and source code. This repository shall be freely available and accessible to all interested parties 
+//
+|*References*
+|See also general principle on open information access 
+//
+|===
+--
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+=== Establish architecture governance
+--
+[cols="1,3", width=100%]
+|===
+|*Statement*
+| DIGIN shall establish a process for the governance of the architecture repository 
+// 
+|*Rationale*
+|To ensure the success of the DIGIN architecture, it is necessary to facilitate sharing of information, guidelines, and architecture artefacts and to establish governance to keep these updated and relevant 
+//
+|*Implications*
+|A clearly defined process for reviewing and accepting changes to the architecture repository shall be established, with roles and responsibilities defined and assigned. The technical solution for the architecture repository must support change management, versioning and traceability 
+//
+|*References*
+|
+//
+|===
+--
