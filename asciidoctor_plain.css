@@ -119,8 +119,34 @@ label{
   z-index: 1;
 }
 
-.item ul{
-  line-height: 50px;
+
+.item-list { 
+  margin: 0;
+  padding-left: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+  list-style-type: none;
+}
+
+.item-list li, .item-button li{
+  margin-left:4px;
+}
+
+.sub-item { /*controls the second level*/
+  margin: 0;
+  padding-left: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}
+
+
+.item a, .item-button a{
   margin: 0;
   padding-left: 4px;
   list-style: none;
@@ -128,102 +154,18 @@ label{
   color: #818181;
   font-weight: normal;
   width: 100%;
+  text-decoration: none;
 }
 
-.item li{ /*controls the second level*/
-  line-height: 50px;
-  margin: 0;
-  padding-left: 16px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
-
-.item label{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 0px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
-
-.item a{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 14px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-  text-decoration: none;
-}
-.item a:link{color:var(#575757);font-weight:var(bold);}
-.item a:hover, .item label:hover{
+.item a:hover, .item-button a:hover{
   color: #575757;
 }
 
 
-/*.sub-item label{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 0px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}*/
-
-.item li a{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 14px; 
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
 
 
-.sub-item li{ /*controls 3rd level drop down*/
-  line-height: 50px;
-  margin: 0;
-  padding-left: 18px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
 
-/*.sub-sub-item label{
-  line-height: 50px;
-  margin: 0;
-  padding-left: 0px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}*/
 
-.sub-sub-item li{  
-  line-height: 50px;
-  margin: 0;
-  padding-left: 14px;
-  list-style: none;
-  text-decoration: none;
-  color: #818181;
-  font-weight: normal;
-  width: 100%;
-}
 
 
 
