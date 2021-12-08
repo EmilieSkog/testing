@@ -1,0 +1,247 @@
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+/*@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+
+/* CUSTOMISATIONS */
+/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
+:root{
+--maincolor:#FFFFFF;
+--primarycolor:#000000;
+--secondarycolor:#AAAAAA;
+--tertiarycolor:#CCCCCC;
+--sidebarbackground:#CACACA;
+--linkcolor:#0D47A1;
+--linkcoloralternate:#B71C1C;
+--white:#FFFFFF;
+--black:#000000;
+}
+
+/* Text styles */
+
+body{font-family: "Noto Sans",sans-serif;background-color: var(--maincolor);color:var(--black);}
+
+h1{color:var(--primarycolor) !important;font-family:"Noto Sans",sans-serif;}
+h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Noto Sans",sans-serif;}
+.title{color:var(--black) !important;font-family:"Noto Sans",sans-serif;font-style: normal; font-weight: normal;}
+a{text-decoration: none;}
+p{font-family: "Noto Sans",sans-serif ! important}
+#toc.toc2 a:link{color:var(--linkcolor);}
+blockquote{color:var(--secondarycolor) !important}
+.quoteblock{color:var(--black)}
+.quoteblock blockquote:before{color:var(--black)}
+code{color:var(--white);background-color: var(--secondarycolor) !important}
+mark{background-color: var(--tertiarycolor)} /* Text highlighting color */
+
+/* Table styles */
+th{background-color: var(--maincolor);color:var(--black) !important;}
+td{background-color: var(--maincolor);color: var(--black) !important}
+
+
+#toc.toc2{background-color:var(--sidebarbackground);}
+#toctitle{color:var(--white);}
+
+/* Responsiveness fixes */
+video {
+  max-width: 100%;
+}
+
+@media all and (max-width: 600px) {
+table {
+  width: 55vw!important;
+  font-size: 3vw;}
+}
+
+/*Personalized*/
+
+/*NAVBAR*/
+
+/* Function for dropdown*/
+.sidenav input[type="checkbox"], .item ul {
+  display: none;
+}
+
+.item input:checked ~ ul{
+  display: block;
+}
+
+.item input:checked ~ label{
+  background-color: rgb(30, 94, 105);
+  color: #CCCCCC;
+}
+
+.sub-item input:checked ~ label, .sub-item input:checked ~ img{
+  background-color: #fff;
+  font-weight: bold;
+  color: #818181;
+}
+
+
+/*Arrow*/
+.arrow{
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+  float: left;
+  z-index: 0;
+  margin: 21px 2px 12px 4px;
+}
+
+/*.item input + .arrow{
+  transform: rotate (-90deg);
+  transition: 0.1s;
+}*/
+
+.item input:checked ~ label img {
+  transform: rotate(90deg);
+  transition: 0.025s;
+}
+
+/*Styling*/
+label:hover{
+  cursor: pointer;
+}
+
+label{
+  width: 100%;
+  display: block;
+  z-index: 3; /*clicl anywere on the label and it will act like a link*/
+  position: relative;
+}
+
+.sidenav{
+  height: 100%;
+  width: 210px;
+  background-color: #FFFFFF;/*rgba(248, 247, 243, 0.974);*/
+  overflow-x: hidden;
+  border-right: 1px solid #818181;
+  position: fixed;
+  z-index: 1;
+}
+
+.item ul{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 4px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+.item li{ /*controls the second level*/
+  line-height: 50px;
+  margin: 0;
+  padding-left: 16px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+.item label{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+.item a{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 14px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+  text-decoration: none;
+}
+.item a:link{color:var(#575757);font-weight:var(bold);}
+.item a:hover, .item label:hover{
+  color: #575757;
+}
+
+
+/*.sub-item label{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}*/
+
+.item li a{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 14px; 
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+
+.sub-item li{ /*controls 3rd level drop down*/
+  line-height: 50px;
+  margin: 0;
+  padding-left: 18px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+/*.sub-sub-item label{
+  line-height: 50px;
+  margin: 0;
+  padding-left: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  width: 100%;
+}*/
+
+.sub-sub-item li{  
+  line-height: 50px;
+  margin: 0;
+  padding-left: 14px;
+  list-style: none;
+  text-decoration: none;
+  color: #818181;
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+
+
+
+
+
+/* Main content */
+.main {
+  margin-left: 210px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  /*width: 100%;*/
+}
+
