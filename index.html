@@ -2448,38 +2448,13 @@ p.tableblock {
 
 
 <body class="article">
-  <!--
-  <div class="sidenav">
-      <a href="#about">Om</a>
-      <a href="#services">Navigasjon</a>
-      <button class="dropdown-btn">Datautveksling 
-          <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-container">
-          <a href="#">Meldingsforsendelse</a>
-          <button class="dropdown-btn_second">Forespørsel-svar
-              <i class="fa fa-caret-down"></i> 
-          </button>
-          <div class="dropdown-container">
-              <a href="#">Noe info</a>
-              <button class="dropdown-btn_second">Mer om forespørsel 
-                  <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-container">
-                  <a href="#contact">BlaBlaBla</a>
-              </div>
-          </div>
-          <a href="#">Publisering-konsumering</a>
-      </div>
-      <a href="#contact">Kontakt</a>
-  </div>
-  -->
+ 
 
   <div class="sidenav">
     <div class="item">
       <!--<input type="checkbox" id="A"/>
       <label for="A">About</label>-->
-      <a href="#about">About</a>
+      <a href="..\index.html">About</a>
     </div>
 
     <div class="item">
@@ -2487,7 +2462,7 @@ p.tableblock {
       <label for="B">Navigation</label>-->
       <a href="#navigation">Navigation</a>
     </div>
-
+<!--
     <div class="item">
       <input type="checkbox" id="C"/>
       <label for="C">Data exchange <img src="images/toggle.png" class="arrow"></label>
@@ -2513,8 +2488,17 @@ p.tableblock {
         </div></li>
         <li><a href="#">Messages</a></li>
       </ul>
+    </div> 
+-->
+    <div class="item">
+      <input type="checkbox" id="C"/>
+      <label for="C">DIGIN Architecture principles <img src="images/toggle.png" class="arrow"></label>
+      <ul>
+        <li><a href="..\architecture_principles\architecture_principles_intro.html">About DIGIN Architecture principles</a></li>
+      
+        <li><a href="..\architecture_principles\architecture_principles_main.html">Architecture principles</a></li>
+      </ul>
     </div>
-    
     <div class="item">
       <!--<input type="checkbox" id="D"/>
       <label for="D">Contact</label>-->
@@ -2523,26 +2507,6 @@ p.tableblock {
 
 
   </div>
-
-  <script>
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
-      var dropdown_second = document.getElementsByClassName("dropdown-btn_second");
-      var j;
-
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") { /*if-sentence: ensures that you can close elements of the navbar*/
-          dropdownContent.style.display = "none";
-          } else {
-          dropdownContent.style.display = "block";
-          }
-        });
-      }
-  </script>
 
 
   <div class="main"> 
