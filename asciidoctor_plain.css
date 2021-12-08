@@ -71,7 +71,7 @@ table {
 }
 
 .sub-item input:checked ~ label, .sub-item input:checked ~ img{
-  background-color: rgba(248, 247, 243, 0.974);
+  background-color: #fff;/*rgba(248, 247, 243, 0.974);*/
   font-weight: bold;
   color: #818181;
 }
