@@ -1,8 +1,0 @@
-= Tittel
- Intro til siden
-
-== Struktur 
-Hvordan siden er bygget opp
-
-== Innholdsforvaltning
-Hvem er ansvarlig for innholdet
