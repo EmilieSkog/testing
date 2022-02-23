@@ -1,2 +1,0 @@
-* architecture_principles_intro.adoc
-* architecture_principles_main.adoc

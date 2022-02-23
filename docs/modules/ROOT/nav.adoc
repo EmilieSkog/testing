@@ -1,0 +1,2 @@
+* index.adoc
+* architecture_principles_main.adoc
