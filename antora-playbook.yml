@@ -1,0 +1,22 @@
+site:
+  title: TEST site
+  url: https://emilieskog.github.io/testing/
+  start_page: architecture_principles:architecture_principles_intro.adoc
+
+content:
+  sources:
+  - url: https://github.com/EmilieSkog/testing
+    branches: main
+    start_path: site
+    
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true

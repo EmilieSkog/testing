@@ -1,0 +1,6 @@
+name: emilies-test
+title: Emilies test
+version: 0.9
+start_page: architecture_principles:architecture_principles_intro.adoc
+nav:
+- site/architecture_principles/nav.adoc
