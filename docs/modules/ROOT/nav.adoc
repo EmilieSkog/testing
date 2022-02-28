@@ -1,2 +1,2 @@
-* xref:index.adoc[]
-* xref:architecture_principles_main.adoc[]
+* xref:index.adoc[index]
+* xref:architecture_principles_main.adoc[Top-level information]
