@@ -1,2 +1,2 @@
-* index.adoc
-* architecture_principles_main.adoc
+* xref:index.adoc[]
+* xref:architecture_principles_main.adoc[]
